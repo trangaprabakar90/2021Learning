@@ -14,7 +14,7 @@ public class App {
         WebDriver d = new ChromeDriver();  
         
         d.get("http://leaftaps.com/opentaps/control/main");
-       
+        d.manage().window().maximize();
         
         // Login page
         d.findElement(By.xpath("//input[@id=\"username\"]")).sendKeys("demosalesmanager");
